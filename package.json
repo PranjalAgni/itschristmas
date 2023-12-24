@@ -1,0 +1,22 @@
+{
+  "name": "itschristmas",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run vite",
+    "vite": "vite",
+    "caddy": "caddy start"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/three": "^0.160.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.1"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.2",
+    "three": "^0.159.0",
+    "vite-plugin-list-directory-contents": "^1.4.5"
+  }
+}

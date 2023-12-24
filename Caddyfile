@@ -1,0 +1,6 @@
+itschristmas.localhost {
+	reverse_proxy localhost:7777
+}
+xn--ls8h.localhost {
+	reverse_proxy localhost:7777
+}
