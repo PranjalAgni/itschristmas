@@ -24,12 +24,11 @@ scene.add(directionalLight);
 
 // Load GLTF model
 const loader = new GLTFLoader();
-let loadedModel: THREE.Group<THREE.Object3DEventMap>;
 loader.load(
   "/christmas.glb",
   (gltf) => {
     console.log("Model is loaded...");
-    loadedModel = gltf.scene;
+    const loadedModel = gltf.scene;
     loadedModel.position.set(0, 0, 2);
     loadedModel.rotation.set(0, Math.PI / 2, 0);
     loadedModel.scale.set(0.05, 0.05, 0.05); // Adjust the scale as needed
@@ -68,13 +67,10 @@ const zoomSpeed = 0.01; // Zoom speed
 // Set up animation
 const animate = function () {
   requestAnimationFrame(animate);
-  // if (loadedModel) {
-  //   // loadedModel.rotation.y += 0.0001; // Adjust the rotation speed as needed
-  // }
 
   // Zoom in gradually
   if (camera.position.z > zoomTarget) {
-    // camera.position.z -= zoomSpeed;
+    camera.position.z -= zoomSpeed;
   }
 
   // Update controls
