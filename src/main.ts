@@ -27,7 +27,7 @@ const loader = new GLTFLoader();
 loader.load(
   "/christmas.glb",
   (gltf) => {
-    console.log("Model is loaded...");
+    console.log("Model is loaded...", gltf.scene);
     const loadedModel = gltf.scene;
     loadedModel.position.set(0, 0, 2);
     loadedModel.rotation.set(0, Math.PI / 2, 0);
